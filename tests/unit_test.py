@@ -25,6 +25,7 @@ def test_dags_integrity(dagbag):
     expected_dag_ids = ["produce_json", "update_db", "data_quality"]
     loaded_dag_ids = list(dagbag.dags.keys())
     print("-----------------")
+    
     print(dagbag.dags.keys())
 
     for dag_id in expected_dag_ids:
